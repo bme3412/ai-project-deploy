@@ -33,13 +33,13 @@ const Article1 = () => {
       <h4 style={headerStyle}>An agentic RAG approach breaks prompts into sub-queries, resulting in better indexing and retrieval</h4>
       <h4 style={headerStyle}>Context-augmented agent helps to remove complexity of having too many functions to fit in the prompt</h4>
       <p style={paragraphStyle}>
-        Naïve RAG (Retrieval Augmented Generation) excels at indexing and retrieving information in response to simple queries. An example would be, given a 10-K filing, “What are the main risk factors for Microsoft?”.
+        Naïve RAG (Retrieval Augmented Generation) excels at indexing and retrieving information in response to simple queries. An example would be, given a 10-K filing, &quot;What are the main risk factors for Microsoft?&quot;.
       </p>
       <p style={paragraphStyle}>
-        But more advanced use cases are needed to answer more complex queries, such as “Give me a summary of the entire 10-K”, or “compare the risk factors from the 2024 10-K as compared to the 2023 10-K”. For more complex use cases where a higher level of reasoning is required, agentic RAG is a superior approach.
+        But more advanced use cases are needed to answer more complex queries, such as &quot;Give me a summary of the entire 10-K&quot;, or &quot;compare the risk factors from the 2024 10-K as compared to the 2023 10-K&quot;. For more complex use cases where a higher level of reasoning is required, agentic RAG is a superior approach.
       </p>
       <p style={paragraphStyle}>
-        Here’s an example of using agentic RAG to parse through the trailing three 10-Qs for Microsoft. Every publicly traded company is required to report quarterly information and all filings (each known as a 10-Q) are arranged with the same template. Each document is broken down into sections, the most useful of which are the financial statements, segment information, and any qualitative commentary about the business.
+        Here&apos;s an example of using agentic RAG to parse through the trailing three 10-Qs for Microsoft. Every publicly traded company is required to report quarterly information and all filings (each known as a 10-Q) are arranged with the same template. Each document is broken down into sections, the most useful of which are the financial statements, segment information, and any qualitative commentary about the business.
         To start, import llama-index and other libraries.
       </p>
       <Image src="/agentic-rag-blog/agent1.png" alt="Image 1" width={800} height={400} />
@@ -48,11 +48,11 @@ const Article1 = () => {
       </p>
       <Image src="/agentic-rag-blog/agent2.png" alt="Image 2" width={800} height={400} />
       <p style={paragraphStyle}>
-        For each of the 10-Q files, downloaded as a PDF, the content is converted to a vector index and then saved into the storage object. A vector index is a data structure that allows for efficient 'similarity search' across a large collection of vectors. A vector is a numerical representation of text that retains semantic context, and the vector index is architected in such a way that it enables the end user to efficiently search for and filter information such that semantically similar text is grouped together. Grouping similar text like this enables one to 'talk' with data.
+        For each of the 10-Q files, downloaded as a PDF, the content is converted to a vector index and then saved into the storage object. A vector index is a data structure that allows for efficient &apos;similarity search&apos; across a large collection of vectors. A vector is a numerical representation of text that retains semantic context, and the vector index is architected in such a way that it enables the end user to efficiently search for and filter information such that semantically similar text is grouped together. Grouping similar text like this enables one to &apos;talk&apos; with data.
       </p>
       <Image src="/agentic-rag-blog/agent3.png" alt="Image 3" width={800} height={400} />
       <p style={paragraphStyle}>
-        With the text from each 10-Q encoded as embeddings and stored in the vector database, the next step is to conduct similarity search, which groups semantically similar content together. In other words, semantic similarity is a measure of likeness between two pieces of text based on their meaning or semantic content. So in the case of Microsoft, an example of text that scores high on semantic similarity would be: "Microsoft enhances its Azure cloud infrastructure" and "Microsoft upgrades its Azure cloud services". Whereas text that shows lower semantic linkage would be: "Microsoft launches a new Xbox gaming console" and "Microsoft reports a decline in Windows operating system sales".
+        With the text from each 10-Q encoded as embeddings and stored in the vector database, the next step is to conduct similarity search, which groups semantically similar content together. In other words, semantic similarity is a measure of likeness between two pieces of text based on their meaning or semantic content. So in the case of Microsoft, an example of text that scores high on semantic similarity would be: &quot;Microsoft enhances its Azure cloud infrastructure&quot; and &quot;Microsoft upgrades its Azure cloud services&quot;. Whereas text that shows lower semantic linkage would be: &quot;Microsoft launches a new Xbox gaming console&quot; and &quot;Microsoft reports a decline in Windows operating system sales&quot;.
       </p>
       <Image src="/agentic-rag-blog/agent4.png" alt="Image 4" width={800} height={400} />
       <p style={paragraphStyle}>
@@ -68,7 +68,7 @@ const Article1 = () => {
       </p>
       <Image src="/agentic-rag-blog/agent7.png" alt="Image 7" width={800} height={400} />
       <p style={paragraphStyle}>
-        But wait, there's more! With an agentic approach we can write many functions to index, retrieve, and parse through the data. Examples are below:
+        But wait, there&apos;s more! With an agentic approach we can write many functions to index, retrieve, and parse through the data. Examples are below:
       </p>
       <Image src="/semantic-chunk-blog/blog2.jpg" alt="Image 8" width={800} height={400} />
       <p style={paragraphStyle}></p>
@@ -94,7 +94,7 @@ const Article1 = () => {
           https://docs.llamaindex.ai/en/stable/examples/node_parsers/semantic_chunking/
         </a>
         <br />
-        -- the concept of RAG first introduced from this paper: "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks";
+        -- the concept of RAG first introduced from this paper: &quot;Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks&quot;;
         <a href="https://arxiv.org/pdf/2005.11401" target="_blank" rel="noopener noreferrer">
           https://arxiv.org/pdf/2005.11401
         </a>

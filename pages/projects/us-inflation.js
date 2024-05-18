@@ -100,7 +100,7 @@ The complete source code and additional documentation for the Interactive US Inf
                 }}
                 onClick={() => toggleImageSize(props.src)}
               >
-                {isClient ? (
+                {isClient && (
                   <Image
                     src={props.src}
                     alt={props.alt || ""}
@@ -108,8 +108,6 @@ The complete source code and additional documentation for the Interactive US Inf
                     height={600}
                     layout="responsive"
                   />
-                ) : (
-                  <img {...props} alt={props.alt || ""} />
                 )}
               </div>
             ),
