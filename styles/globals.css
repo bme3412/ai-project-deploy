@@ -1,0 +1,306 @@
+/* Base styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #4a4a4a;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1, .project-details-content h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-links li {
+  margin: 0 1rem;
+}
+
+.nav-links li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+.nav-links li a:hover {
+  color: #2c3e50;
+  background-color: #ecf0f1;
+}
+
+.start-here {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0.5rem 1rem;
+  background-color: #3498db;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.start-here a {
+  color: #ecf0f1;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.start-here a:hover {
+  color: #3498db;
+  background-color: #ecf0f1;
+  border-radius: 5px;
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Slightly transparent overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #fff;
+  padding: 3rem; /* Increase padding for better spacing */
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  max-width: 90%; /* Increase modal width */
+  max-height: 90%; /* Increase modal height */
+  overflow: auto; /* Enable scrolling for overflow content */
+  position: relative;
+}
+
+.modal-header h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  text-align: center;
+  color: #333; /* Darker font color */
+}
+
+.modal-body p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: #333; /* Darker font color */
+}
+
+.modal-body a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.modal-body a:hover {
+  text-decoration: underline;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  color: #999;
+}
+
+.modal-close:hover {
+  color: #333;
+}
+
+
+/* Project card styles */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.project {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  overflow: visible;
+}
+
+.project:hover {
+  transform: translateY(-8px);
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.project h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.project p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.links a {
+  text-decoration: none;
+  color: #007acc;
+  font-weight: bold;
+  margin-right: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: #0056b3;
+}
+
+.more-details-btn {
+  display: inline-flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.more-details-btn:hover {
+  color: #007acc;
+}
+
+.plus-sign {
+  background-color: #007acc;
+  color: #fff;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5rem;
+}
+
+.more-details-text {
+  font-size: 1rem;
+}
+
+body.modal-active {
+  overflow: hidden; /* Prevent scrolling when modal is open */
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* LlamaLens Specific Styles */
+.project-details-page {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.project-details-content ul {
+  margin: 10px 0 20px 20px;
+}
+
+.project-details-content li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  list-style-type: square;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #0077cc;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  background-color: #005fa3;
+}
+
+@media (max-width: 768px) {
+  .project-details-page {
+    width: 95%;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
