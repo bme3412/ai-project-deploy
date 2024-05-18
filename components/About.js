@@ -58,7 +58,7 @@ const About = () => {
       </ProfileImageWrapper>
       <Heading>About Me</Heading>
       <Paragraph>
-        Hi, I'm Brendan. I have a deep interest in investing and AI. I have experience in developing
+        Hi, I&apos;m Brendan. I have a deep interest in investing and AI. I have experience in developing
         innovative projects that combine my expertise in programming and my fascination with the world
         of finance.
       </Paragraph>
