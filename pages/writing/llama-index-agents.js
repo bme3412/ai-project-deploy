@@ -1,5 +1,7 @@
 import React from "react";
 import Head from "next/head";
+import Image from "next/image";
+
 const Article1 = () => {
   const styles = {
     article: {
@@ -59,6 +61,7 @@ const Article1 = () => {
       fontWeight: "bold",
     },
   };
+
   return (
     <div style={styles.article}>
       <Head>
@@ -106,14 +109,18 @@ const Article1 = () => {
       </p>
       <h3 style={styles.header}>1. Building a Chatbot to Query Documents</h3>
       <div style={styles.imageContainer}>
-        <img
+        <Image
           src="/llama-index-agents/chatbot-query-1.png"
-          alt="Image 1"
+          alt="Chatbot Query Example 1"
+          width={400}
+          height={300}
           style={styles.image}
         />
-        <img
+        <Image
           src="/llama-index-agents/chatbot-response-1.png"
-          alt="Image 2"
+          alt="Chatbot Response Example 1"
+          width={400}
+          height={300}
           style={styles.image}
         />
       </div>
@@ -123,22 +130,24 @@ const Article1 = () => {
         and S-1s. Results are acceptable, but can be improved.
       </p>
       <h3 style={styles.header}>2. OpenAI Agent with Query Engine Tools</h3>
-      <img
+      <Image
         src="/llama-index-agents/openai-agent-thread.png"
-        alt="Image 2"
+        alt="OpenAI Agent Example"
+        width={800}
+        height={450}
         style={styles.fullWidthImage}
       />
       <p style={styles.paragraph}>
         The OpenAI agent with query tools is a bit more advanced in that it
         creates a conversational agent that can answer questions and provide
         information based on a given set of documents or data sources. It
-        combines the power of OpenAI's language models with the ability to
+        combines the power of OpenAI&apos;s language models with the ability to
         retrieve relevant information from indexed data. The agent can
         understand and respond to natural language questions based on the
         indexed documents. In addition, the query engine tools employ semantic
         search techniques to find the most relevant information from the indexed
         documents. It goes beyond simple keyword matching and understands the
-        meaning and context of the user's query to provide accurate results.
+        meaning and context of the user&apos;s query to provide accurate results.
       </p>
       <p style={styles.paragraph}>
         This allows for more robust queries. An example is, if I load in the
@@ -236,9 +245,11 @@ const Article1 = () => {
         </p>
       </div>
       <h3 style={styles.header}>3. Multi-Document Agents</h3>
-      <img
+      <Image
         src="/llama-index-agents/multi-document.png"
-        alt="Image 2"
+        alt="Multi-Document Agent Example"
+        width={800}
+        height={450}
         style={styles.fullWidthImage}
       />
       <p style={styles.paragraph}>
@@ -320,4 +331,5 @@ const Article1 = () => {
     </div>
   );
 };
+
 export default Article1;

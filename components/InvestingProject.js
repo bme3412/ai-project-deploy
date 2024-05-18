@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const InvestingProject = ({
   title,
@@ -13,7 +14,7 @@ const InvestingProject = ({
 
   return (
     <div className="project">
-      <img src={imageUrl} alt={title} />
+      <Image src={imageUrl} alt={title} width={800} height={600} />
       <h3>
         {title} {isLoomVideo && <span role="img" aria-label="camera">⏯️</span>}
       </h3>

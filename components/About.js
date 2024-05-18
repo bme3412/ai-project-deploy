@@ -1,6 +1,6 @@
-// components/About.js
 import React from "react";
 import styled from "styled-components";
+import Image from "next/image";
 
 const AboutWrapper = styled.div`
   display: flex;
@@ -12,11 +12,11 @@ const AboutWrapper = styled.div`
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 `;
 
-const ProfileImage = styled.img`
+const ProfileImageWrapper = styled.div`
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  object-fit: cover;
+  overflow: hidden;
   margin-bottom: 1.5rem;
 `;
 
@@ -53,10 +53,12 @@ const Link = styled.a`
 const About = () => {
   return (
     <AboutWrapper>
-      <ProfileImage src="/profile-picture.jpg" alt="Profile Picture" />
+      <ProfileImageWrapper>
+        <Image src="/profile-picture.jpg" alt="Profile Picture" width={200} height={200} />
+      </ProfileImageWrapper>
       <Heading>About Me</Heading>
       <Paragraph>
-        Hi, I'm Brendan, I have a deep interest in investing and AI. I have experience in developing
+        Hi, I'm Brendan. I have a deep interest in investing and AI. I have experience in developing
         innovative projects that combine my expertise in programming and my fascination with the world
         of finance.
       </Paragraph>

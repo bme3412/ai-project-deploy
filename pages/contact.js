@@ -46,7 +46,7 @@ const Contact = () => {
     <ContactWrapper>
       <Heading>Contact Brendan</Heading>
       <Paragraph>
-        If you have any questions, project ideas, or just want to connect, feel free to reach out to me through any of the channels below. I'm always excited to engage in meaningful conversations and explore potential collaborations at the intersection of investing and AI.
+        If you have any questions, project ideas, or just want to connect, feel free to reach out to me through any of the channels below. I&apos;m always excited to engage in meaningful conversations and explore potential collaborations at the intersection of investing and AI.
       </Paragraph>
       <LinksWrapper>
         <Link href="https://www.linkedin.com/in/brendan-erhard/" target="_blank" rel="noopener noreferrer">

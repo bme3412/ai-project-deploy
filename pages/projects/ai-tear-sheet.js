@@ -6,7 +6,7 @@ import ReactMarkdown from "react-markdown";
 const AITearSheet = () => {
   const project = {
     title: "AI Tear Sheet: Comprehensive Financial Data Analysis Made Easy",
-    description: `AI Tear Sheet is a robust Flask-based web application that streamlines the process of analyzing financial data for specific companies. With AI Tear Sheet, users can easily access detailed financial statements, stock price data, and key metrics, providing a comprehensive overview of a company's financial health.
+    description: `AI Tear Sheet is a robust Flask-based web application that streamlines the process of analyzing financial data for specific companies. With AI Tear Sheet, users can easily access detailed financial statements, stock price data, and key metrics, providing a comprehensive overview of a company&apos;s financial health.
 
 ## Key Features
 
@@ -159,10 +159,12 @@ The complete source code and additional documentation are available on [GitHub](
               maxHeight: "90%",
             }}
           >
-            <img
+            <Image
               src={selectedImage}
               alt="Enlarged Screenshot"
-              style={{ width: "100%", height: "100%", objectFit: "contain" }}
+              layout="fill"
+              objectFit="contain"
+              style={{ width: "100%", height: "100%" }}
             />
             <button
               onClick={closeImageModal}

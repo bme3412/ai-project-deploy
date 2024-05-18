@@ -1,5 +1,7 @@
 // components/CodeCrawler.js
 import React, { useEffect, useState } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 
 const CodeCrawler = () => {
   const [project, setProject] = useState({
@@ -22,13 +24,15 @@ const CodeCrawler = () => {
   return (
     <div className="project-details-page">
       <h1>{project.title}</h1>
-      <img src={project.imageUrl} alt={project.title} />
+      <Image src={project.imageUrl} alt={project.title} width={800} height={600} />
       <p>{project.description}</p>
       <div className="project-details-content">
         <p>{project.details}</p>
         <div dangerouslySetInnerHTML={{ __html: bokehHtml }}></div>
       </div>
-      <a href="/" className="back-link">&larr; Back to Projects</a>
+      <Link href="/" legacyBehavior>
+        <a className="back-link">&larr; Back to Projects</a>
+      </Link>
     </div>
   );
 };

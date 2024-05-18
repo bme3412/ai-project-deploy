@@ -1,11 +1,11 @@
-// components/AIProject.js
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const AIProject = ({ title, description, imageUrl, demoUrl, githubUrl, detailsUrl }) => {
   return (
     <div className="project">
-      <img src={imageUrl} alt={title} />
+      <Image src={imageUrl} alt={title} width={800} height={450} />
       <h3>{title}</h3>
       <p>{description}</p>
       <div className="links">

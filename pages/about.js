@@ -54,12 +54,10 @@ const About = () => {
     <AboutWrapper>
       <Heading>About Brendan</Heading>
       <Paragraph>
-      Hi, I'm Brendan, and I have a deep interest in investing and AI. I have been a public equity investor since 2011, a tech investor for 9 years, and I started teaching myself Python in 2019. The visualization below, developed with Python, is the result of a program I wrote that crawls through my GitHub profile and tracks the usage of various Python libraries over time. The x-axis displays the first date of usage of each Python library, with the size of the markers indicating the total number of files using those libraries. It has been quite the journey and has developed into a true passion.
+        Hi, I&apos;m Brendan, and I have a deep interest in investing and AI. I have been a public equity investor since 2011, a tech investor for 9 years, and I started teaching myself Python in 2019. The visualization below, developed with Python, is the result of a program I wrote that crawls through my GitHub profile and tracks the usage of various Python libraries over time. The x-axis displays the first date of usage of each Python library, with the size of the markers indicating the total number of files using those libraries. It has been quite the journey and has developed into a true passion.
       </Paragraph>
       <Paragraph>
-      I'm looking to put it all together - to build upon my background as a fundamental investor by using Python and the latest AI and Large Language Models. Through my projects, I aim to explore the potential of AI in the realm of investing, creating
-        tools and applications that can assist investors in making informed decisions. I believe in the
-        power of technology to revolutionize the way we analyze and understand financial markets.
+        I&apos;m looking to put it all together - to build upon my background as a fundamental investor by using Python and the latest AI and Large Language Models. Through my projects, I aim to explore the potential of AI in the realm of investing, creating tools and applications that can assist investors in making informed decisions. I believe in the power of technology to revolutionize the way we analyze and understand financial markets.
       </Paragraph>
       <LinksWrapper>
         <Link href="https://www.linkedin.com/in/brendan-erhard/" target="_blank" rel="noopener noreferrer">

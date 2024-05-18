@@ -10,7 +10,7 @@ const InteractiveUSInflationMap = () => {
 
 ## Global Inflation
 
-Before diving into the US Inflation Map, let's take a look at global inflation trends. The following images showcase inflation rates across various regions worldwide, as well as returns for the S&P 500 in the months before and after the end of prior Federal Reserve rate hiking cycles. Click each image to expand. All data from OECD:`,
+Before diving into the US Inflation Map, let&apos;s take a look at global inflation trends. The following images showcase inflation rates across various regions worldwide, as well as returns for the S&P 500 in the months before and after the end of prior Federal Reserve rate hiking cycles. Click each image to expand. All data from OECD:`,
     globalInflationImages: `
 ![Global Inflation Heatmap](/inflation_heatmap.png)
 ![Global Inflation Heatmap 2020-2023](/inflation_heatmap_2020_2023.png)
@@ -103,13 +103,13 @@ The complete source code and additional documentation for the Interactive US Inf
                 {isClient ? (
                   <Image
                     src={props.src}
-                    alt={props.alt}
+                    alt={props.alt || ""}
                     width={800}
                     height={600}
                     layout="responsive"
                   />
                 ) : (
-                  <img {...props} />
+                  <img {...props} alt={props.alt || ""} />
                 )}
               </div>
             ),

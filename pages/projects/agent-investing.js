@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Head from "next/head";
+import Image from "next/image";
 
 const Article1 = () => {
   const [expandedImage, setExpandedImage] = useState(null);
@@ -87,9 +88,7 @@ const Article1 = () => {
       <Head>
         <title>Llama-Index Agents</title>
       </Head>
-      <h2 style={styles.header}>
-        Exploring Agentic Workflows with Llama-Index
-      </h2>
+      <h2 style={styles.header}>Exploring Agentic Workflows with Llama-Index</h2>
       <p style={styles.paragraph}>
         2024 has been declared by some in the AI community as the Year of the
         Agent, when full-blown AI agents and assistants really start to have an
@@ -129,9 +128,11 @@ const Article1 = () => {
       </p>
       <h3 style={styles.header}>1. Building a Chatbot to Query Documents</h3>
       <div style={styles.imageContainer}>
-        <img
+        <Image
           src="/llama-index-agents/chatbot-query-1.png"
           alt="Image 1"
+          width={800}
+          height={600}
           style={
             expandedImage === "/llama-index-agents/chatbot-query-1.png"
               ? styles.expandedImage
@@ -141,9 +142,11 @@ const Article1 = () => {
             handleImageClick("/llama-index-agents/chatbot-query-1.png")
           }
         />
-        <img
+        <Image
           src="/llama-index-agents/chatbot-response-1.png"
           alt="Image 2"
+          width={800}
+          height={600}
           style={
             expandedImage === "/llama-index-agents/chatbot-response-1.png"
               ? styles.expandedImage
@@ -160,9 +163,11 @@ const Article1 = () => {
         and S-1s. Results are acceptable, but can be improved.
       </p>
       <h3 style={styles.header}>2. OpenAI Agent with Query Engine Tools</h3>
-      <img
+      <Image
         src="/llama-index-agents/openai-agent-thread.png"
-        alt="Image 2"
+        alt="Image 3"
+        width={800}
+        height={600}
         style={
           expandedImage === "/llama-index-agents/openai-agent-thread.png"
             ? styles.expandedImage
@@ -176,13 +181,13 @@ const Article1 = () => {
         The OpenAI agent with query tools is a bit more advanced in that it
         creates a conversational agent that can answer questions and provide
         information based on a given set of documents or data sources. It
-        combines the power of OpenAI's language models with the ability to
+        combines the power of OpenAI&apos;s language models with the ability to
         retrieve relevant information from indexed data. The agent can
         understand and respond to natural language questions based on the
         indexed documents. In addition, the query engine tools employ semantic
         search techniques to find the most relevant information from the indexed
         documents. It goes beyond simple keyword matching and understands the
-        meaning and context of the user's query to provide accurate results.
+        meaning and context of the user&apos;s query to provide accurate results.
       </p>
       <p style={styles.paragraph}>
         This allows for more robust queries. An example is, if I load in the
@@ -280,9 +285,11 @@ const Article1 = () => {
         </p>
       </div>
       <h3 style={styles.header}>3. Multi-Document Agents</h3>
-      <img
+      <Image
         src="/llama-index-agents/multi-document.png"
-        alt="Image 3"
+        alt="Image 4"
+        width={800}
+        height={600}
         style={
           expandedImage === "/llama-index-agents/multi-document.png"
             ? styles.expandedImage
@@ -420,4 +427,5 @@ const Article1 = () => {
     </div>
   );
 };
+
 export default Article1;
